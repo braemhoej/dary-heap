@@ -70,7 +70,6 @@ private:
         while (first_child_index < container_.size()) {
             int smallest_child_index = first_child_index;
             T smallest_child = container_[smallest_child_index];
-            // Determine smallest child ...
             for (int child_index = first_child_index; child_index < container_.size() && child_index <= last_child_index; child_index++) {
                 T child = container_[child_index];
                 if (comparator_(child, smallest_child)) {
