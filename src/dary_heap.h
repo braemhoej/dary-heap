@@ -21,6 +21,14 @@ public:
         return container_.empty();
     }
 
+    void reserve(size_t number) {
+        container_.reserve(number);
+    }
+
+    void clear() {
+        container_.clear();
+    }
+
     Container& container() {
         return container_;
     }
