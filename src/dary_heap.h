@@ -21,7 +21,7 @@ public:
         return container_.empty();
     }
 
-    Container container() {
+    Container& container() {
         return container_;
     }
 
