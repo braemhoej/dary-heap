@@ -9,6 +9,12 @@ class dary_heap {
     typedef typename Container::const_reference const_reference;
 
 public:
+    /**
+     * @brief Construct a new dary heap object
+     * 
+     */
+    dary_heap() = default;
+    
     dary_heap(Compare comparator) : comparator_(comparator) { }
 
     value_type top() {
